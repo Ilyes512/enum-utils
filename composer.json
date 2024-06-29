@@ -1,7 +1,6 @@
 {
     "name": "ilyes512/enum-utils",
     "type": "library",
-    "version": "0.1.0",
     "description": "A enum-utils package.",
     "keywords": [
         "package",
