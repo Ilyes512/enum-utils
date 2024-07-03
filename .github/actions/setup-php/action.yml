@@ -30,6 +30,5 @@ runs:
         coverage: ${{ inputs.coverage }}
 
     - name: Install dependencies
-      if: steps.composer-cache.outputs.cache-hit != 'true'
       shell: bash
       run: composer install
