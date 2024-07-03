@@ -12,7 +12,6 @@
         "webmozart/assert": "^1.11"
     },
     "require-dev": {
-        "ext-xdebug": "*",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
         "ilyes512/code-style": "^2.0-dev",
         "mockery/mockery": "^1.6",
