@@ -8,7 +8,8 @@
     ],
     "license": "MIT",
     "require": {
-        "php": ">=8.3"
+        "php": ">=8.3",
+        "webmozart/assert": "^1.11"
     },
     "require-dev": {
         "ext-xdebug": "*",
@@ -18,6 +19,7 @@
         "overtrue/phplint": "^9.3.0",
         "phpstan/phpstan": "^1.11",
         "phpstan/phpstan-mockery": "^1.1.0",
+        "phpstan/phpstan-webmozart-assert": "^1.2",
         "phpunit/phpunit": "^11.1",
         "symfony/var-dumper": "^7.0"
     },
