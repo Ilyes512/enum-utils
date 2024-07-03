@@ -38,7 +38,7 @@ jobs:
 
       - name: Setup PHP
         if: steps.composer-cache.outputs.cache-hit != 'true'
-        uses: shivammathur/setup-php@2.30.4
+        uses: shivammathur/setup-php@2.31.0
         with:
           php-version: "8.3"
 
