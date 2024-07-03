@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ilyes512\EnumUtils\Tests\Unit;
+namespace Ilyes512\EnumUtils\Tests;
 
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
 use PHPUnit\Framework\TestCase as PHPUnitTestCase;
