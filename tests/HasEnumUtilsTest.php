@@ -7,7 +7,7 @@ namespace Ilyes512\EnumUtils\Tests;
 use Ilyes512\EnumUtils\Tests\Enums\EnumUtils\BackedColors;
 use Ilyes512\EnumUtils\Tests\Enums\EnumUtils\Colors;
 
-class EnumUtilsTest extends UnitTestCase
+class HasEnumUtilsTest extends UnitTestCase
 {
     public function testNamesWithBackedEnum(): void
     {

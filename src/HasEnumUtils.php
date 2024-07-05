@@ -6,7 +6,7 @@ namespace Ilyes512\EnumUtils;
 
 use UnitEnum;
 
-trait EnumUtils
+trait HasEnumUtils
 {
     /**
      * @return list<string>

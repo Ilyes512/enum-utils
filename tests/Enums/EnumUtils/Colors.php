@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Ilyes512\EnumUtils\Tests\Enums\EnumUtils;
 
-use Ilyes512\EnumUtils\EnumUtils;
+use Ilyes512\EnumUtils\HasEnumUtils;
 
 enum Colors
 {
-    use EnumUtils;
+    use HasEnumUtils;
 
     case RED;
     case GREEN;

@@ -10,9 +10,9 @@ use Closure;
 /**
  * @template R of int|string
  */
-trait BackedEnumUtils
+trait HasBackedEnumUtils
 {
-    use EnumUtils;
+    use HasEnumUtils;
 
     /**
      * @return list<int|string>

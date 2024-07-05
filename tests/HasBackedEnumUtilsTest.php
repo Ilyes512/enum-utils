@@ -8,7 +8,7 @@ use Ilyes512\EnumUtils\Exceptions\InvalidArgumentException;
 use Ilyes512\EnumUtils\Tests\Enums\BackedEnumUtils\BackedColors;
 use Ilyes512\EnumUtils\Tests\Enums\BackedEnumUtils\Colors;
 
-class BackedEnumUtilsTest extends UnitTestCase
+class HasBackedEnumUtilsTest extends UnitTestCase
 {
     public function testNamesWithBackedEnum(): void
     {
