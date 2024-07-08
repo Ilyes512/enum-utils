@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Ilyes512\EnumUtils\Tests;
 
-use Ilyes512\EnumUtils\Tests\Enums\EnumUtils\BackedColors;
-use Ilyes512\EnumUtils\Tests\Enums\EnumUtils\Colors;
+use Ilyes512\EnumUtils\Tests\Enums\BackedColors;
+use Ilyes512\EnumUtils\Tests\Enums\Colors;
 
 class HasEnumUtilsTest extends UnitTestCase
 {

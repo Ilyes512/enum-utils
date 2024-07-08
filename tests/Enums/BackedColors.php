@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ilyes512\EnumUtils\Tests\Enums\EnumUtils;
+namespace Ilyes512\EnumUtils\Tests\Enums;
 
 use BackedEnum;
 use Ilyes512\EnumUtils\HasEnumUtils;
