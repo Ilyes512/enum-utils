@@ -13,13 +13,13 @@ class HasEnumUtilsTest extends UnitTestCase
     {
         $names = BackedColors::names();
 
-        $this->assertSame(['RED', 'GREEN', 'BLUE'], $names);
+        self::assertSame(['RED', 'GREEN', 'BLUE'], $names);
     }
 
     public function testNamesWithPureEnum(): void
     {
         $names = Colors::names();
 
-        $this->assertSame(['RED', 'GREEN', 'BLUE'], $names);
+        self::assertSame(['RED', 'GREEN', 'BLUE'], $names);
     }
 }

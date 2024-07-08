@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Ilyes512\EnumUtils;
 
 use Ilyes512\EnumUtils\Exceptions\InvalidArgumentException;
+use Override;
 use Webmozart\Assert\Assert as WebmozartAssert;
 
 class Assert extends WebmozartAssert
@@ -17,7 +18,8 @@ class Assert extends WebmozartAssert
      * @psalm-pure this method is not supposed to perform side-effects
      * @psalm-return never
      */
-    protected static function reportInvalidArgument($message)
+    #[Override]
+    protected static function reportInvalidArgument($message): never
     {
         throw new InvalidArgumentException($message);
     }

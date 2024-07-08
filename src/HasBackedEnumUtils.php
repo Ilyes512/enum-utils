@@ -4,11 +4,8 @@ declare(strict_types=1);
 
 namespace Ilyes512\EnumUtils;
 
-use BackedEnum;
-use Closure;
-
 /**
- * @template R of int|string
+ * @template T of int|string
  */
 trait HasBackedEnumUtils
 {
@@ -16,17 +13,10 @@ trait HasBackedEnumUtils
 
     /**
      * @return list<int|string>
-     * @phpstan-return list<R>
+     * @phpstan-return list<T>
      */
     public static function values(): array
     {
-        Assert::isAOf(static::class, BackedEnum::class, 'The method can only be used by a backed enum');
-
-        /**
-         * @var Closure(BackedEnum):R $closure
-         */
-        $closure = static fn(BackedEnum $e): int|string => $e->value;
-
-        return array_map($closure, static::cases());
+        return EnumUtils::getValues(static::class);
     }
 }
