@@ -6,6 +6,7 @@ namespace Ilyes512\EnumUtils;
 
 use BackedEnum;
 use Closure;
+use Ilyes512\EnumUtils\Exceptions\EnumUtilsValueError;
 use UnitEnum;
 
 readonly class EnumUtils
@@ -35,5 +36,38 @@ readonly class EnumUtils
         $closure = static fn(BackedEnum $e): int|string => $e->value;
 
         return array_map($closure, $enum::cases());
+    }
+
+    /**
+     * @template T of UnitEnum
+     *
+     * @param class-string<T> $enum
+     *
+     * @return T
+     */
+    public static function fromName(string $enum, string $name): UnitEnum
+    {
+        if (!in_array($name, static::getNames($enum), strict: true)) {
+            throw new EnumUtilsValueError("'$name' is not a valid name for '$enum'");
+        }
+
+        /** @var T */
+        return constant("$enum::$name");
+    }
+
+    /**
+     * @template T of UnitEnum
+     *
+     * @param class-string<T> $enum
+     *
+     * @return ?T
+     */
+    public static function tryFromName(string $enum, string $name): ?UnitEnum
+    {
+        try {
+            return static::fromName($enum, $name);
+        } catch (EnumUtilsValueError) {
+            return null;
+        }
     }
 }
