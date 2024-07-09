@@ -8,18 +8,20 @@
     ],
     "license": "MIT",
     "require": {
-        "php": ">=8.3",
-        "webmozart/assert": "^1.11"
+        "php": ">=8.3"
     },
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
         "ilyes512/code-style": "^2.0-dev",
         "mockery/mockery": "^1.6",
         "overtrue/phplint": "^9.3.0",
+        "phpstan/extension-installer": "^1.4",
         "phpstan/phpstan": "^1.11",
         "phpstan/phpstan-mockery": "^1.1.0",
-        "phpstan/phpstan-webmozart-assert": "^1.2",
+        "phpstan/phpstan-phpunit": "^1.4",
+        "phpstan/phpstan-strict-rules": "^1.6",
         "phpunit/phpunit": "^11.1",
+        "shipmonk/phpstan-rules": "^3.0",
         "symfony/var-dumper": "^7.0"
     },
     "autoload": {
@@ -62,7 +64,8 @@
     "config": {
         "sort-packages": true,
         "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
         }
     },
     "minimum-stability": "stable",

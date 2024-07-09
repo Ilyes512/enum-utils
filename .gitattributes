@@ -4,6 +4,7 @@
 # Ignore all test and documentation with "export-ignore".
 /.devcontainer              export-ignore
 /.vscode                    export-ignore
+/stubs                      export-ignore
 /docs                       export-ignore
 /tests                      export-ignore
 /.dockerignore              export-ignore

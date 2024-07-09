@@ -6,6 +6,6 @@ namespace Ilyes512\EnumUtils\Exceptions;
 
 use Throwable;
 
-interface EnumUtilsException extends Throwable
+interface EnumUtilsError extends Throwable
 {
 }

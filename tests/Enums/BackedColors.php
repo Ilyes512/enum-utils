@@ -2,20 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Ilyes512\EnumUtils\Tests\Enums\BackedEnumUtils;
+namespace Ilyes512\EnumUtils\Tests\Enums;
 
 use BackedEnum;
-use Ilyes512\EnumUtils\HasBackedEnumUtils;
+use Ilyes512\EnumUtils\HasEnumUtils;
 
 /**
  * @implements BackedEnum<string>
  */
 enum BackedColors: string
 {
-    /**
-     * @use HasBackedEnumUtils<string>
-     */
-    use HasBackedEnumUtils;
+    use HasEnumUtils;
 
     case RED = 'red';
     case GREEN = 'green';
