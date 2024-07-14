@@ -143,12 +143,6 @@ tasks:
       - task: dc:run:composer
         vars: { CLI_ARGS: "run test-report" }
 
-  composer:update-test-snapshots:
-    desc: Update PHPUnit snapshots
-    cmds:
-      - task: dc:run:composer
-        vars: { CLI_ARGS: "run update-test-snapshots" }
-
   composer:checktype:
     desc: Check code type using PHPStan
     cmds:
